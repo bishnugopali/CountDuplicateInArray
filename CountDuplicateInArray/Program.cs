@@ -23,7 +23,7 @@ namespace CountDuplicateInArray
             for (i = 0; i < n; i++)
             {
                 Console.Write("element - {0} : ", i);
-                a[i] = Convert.ToInt32(Console.ReadLine());
+                arr1[i] = Convert.ToInt32(Console.ReadLine());
             }
             /*----------------- copy in other array ------------------------------------*/
             for (i = 0; i < n; i++)
@@ -48,11 +48,15 @@ namespace CountDuplicateInArray
             for (i = 0; i < n; i++)
             {
 
-                if (a[i] == a[i + 1])
+                if (arr3[i] == 2)
                 {
                     count++;
                 }
             }
+            Console.Write("The number of duplicate elements is: {0} \n", count);
+
+            Console.Write("\n\n");
+            Console.ReadLine();
         }
     }
 }
